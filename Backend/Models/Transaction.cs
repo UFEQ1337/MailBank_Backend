@@ -23,5 +23,13 @@ namespace Backend.Models
         public DateTime Date { get; set; }
 
         public User User { get; set; } = null!;
+
+        [Required]
+        [EmailAddress]
+        public string RecipientEmail { get; set; } = string.Empty; // Nowa właściwość
+
+        [Required]
+        [MaxLength(255)]
+        public string Description { get; set; } = string.Empty; // Nowa właściwość
     }
 }

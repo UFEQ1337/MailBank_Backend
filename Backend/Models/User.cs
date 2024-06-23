@@ -1,5 +1,7 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.Text.Json.Serialization;
 
 namespace Backend.Models
 {
@@ -34,5 +36,11 @@ namespace Backend.Models
         [Required]
         [MaxLength(20)]
         public string Status { get; set; } = string.Empty;
+
+        [JsonIgnore]
+        public BankAccount BankAccount { get; set; } = null!;
+
+        [JsonIgnore]
+        public ICollection<Transaction> Transactions { get; set; } = new List<Transaction>();
     }
 }
