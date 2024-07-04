@@ -97,3 +97,9 @@ Plik `Program.cs` zawiera punkt wejścia aplikacji i konfiguruje uruchomienie se
 ### MyDbContext.cs
 
 Plik `MyDbContext.cs` konfiguruje kontekst bazy danych i definiuje DbSety dla modeli danych.
+
+
+### Diagram
+![UML](https://github.com/UFEQ1337/MailBank_Backend/assets/64553202/5b7beb40-260b-45a4-8d23-32a13e04bd88)
+
+
